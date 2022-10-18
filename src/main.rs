@@ -45,8 +45,8 @@ fn main() {
     let some_char = Some("H");
     let some_num = Some(12);
     // let abs: Option<i32> = None;
-    let val = get_currency_in_dinar(500.0 , Currency::Dinar);
-    println!("{}" , val)
+    let val = get_currency_in_dinar(500.0, Currency::Dinar);
+    println!("{}", val)
 }
 
 impl Message {
@@ -61,10 +61,10 @@ enum Currency {
     Euro,
 }
 
-fn get_currency_in_dinar(value: f32, currency: Currency) -> f32{
-    match(currency) {
+fn get_currency_in_dinar(value: f32, currency: Currency) -> f32 {
+    match currency {
         Currency::Dinar => value,
         Currency::Dollar => value * 221.00,
-        Currency::Euro => value * 214.00
+        Currency::Euro => value * 214.00,
     }
 }
