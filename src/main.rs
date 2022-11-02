@@ -55,6 +55,7 @@ impl Message {
     }
 }
 
+
 enum Currency {
     Dinar,
     Dollar,
